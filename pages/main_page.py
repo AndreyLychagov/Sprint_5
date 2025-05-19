@@ -23,3 +23,6 @@ class MainPage(BasePage):
 
     def popup_title(self):
         return self.driver.find_element(*PopupFormLocators.POPUP_TITLE).text
+
+    def open_user_profile(self):
+        self.click(MainPageLocators.USER_ICON)
